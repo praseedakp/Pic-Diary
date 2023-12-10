@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/a42570f4e1.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <meta charset="UTF-8">
+    <title>Single view Images</title>
+  <style>
+     *{
+  padding:0px;
+  margin:0px;
+  box:border-box;
+  }
+  body{
+ background-color: #FAACA8;
+background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+
+  }
+  .si{
+        margin-top:5px;
+        }
+        .card{
+        margin-top:10px;
+        margin-bottom:15px;
+        border:4px solid white;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin-left:200px;
+        background-color: #FFDEE9;
+background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+
+        }
+        card:hover{
+        transform:scale(1.5);
+        background:lightgrey;
+        }
+        .card img{
+        transition:scale(1.9);
+        border:2px solid #4da6ff;
+        height:300px;
+        width:490px;
+        margin-left:200px;
+       margin-top:20px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius:20% 34%;
+        }
+        img:hover{
+        transform:scale(1.09);
+        }
+        h3{
+        text-align:center;
+
+        }
+        h5{
+        text-align:center;
+        font-family:cursive;
+        color:red;
+        }
+        .card-body{
+        text-align:center;
+        padding:-10px;
+        font-size:20px;
+        }
+        p{
+        font-family:cursive;
+        color:#cc6600;
+        }
+        h3{
+        color:green;
+        font-family:cursive;
+        }
+        .fa-solid{
+        color:red;
+        }
+
+    .bu .btn{
+    margin-left:50px;
+    width:200px;
+    border:4px solid dimgrey;
+    font-size:18px;
+    margin-top:10px;
+    }
+    #one{
+    height:150px;
+    width:150px;
+    border:2px solid dimgrey;
+    border-radius:13% 34%;
+
+    margin-left:-10px;
+
+
+    }
+    #two{
+     height:150px;
+    width:150px;
+    border:2px solid dimgrey;
+    border-radius:100%;
+    }
+    #three{
+     height:150px;
+    width:150px;
+    border:2px solid dimgrey;
+    border-radius:13% 34%;
+    }
+  </style>
+</head>
+<body>
+<div class="bu">
+    <a href="http://127.0.0.1:8000/image_app1/userdispimage/" class="btn btn-light"><b>Back</b></a>
+</div>
+
+<div class="si">
+
+    <div class="container">
+        <h3><b>VIEW IMAGES</b></h3>
+        <h5><b>Fabulous Images For You.
+              </b></h5>
+        <div class="row">
+
+            <div class="col-3">
+                <div class="card" style="width:890px;height:600px;">
+                    <img src="{% static im %}" class="card-img-top">
+                    <div class="card-body">
+                    <b><h3 class="card-title">{{a.aimagename}}</h3></b>
+
+                          <img src="{% static im %}" id="one">
+                         <img src="{% static im %}" id="two">
+                         <img src="{% static im %}" id="three">
+
+
+                </div>
+            </div>
+        </div>
+                </div>
+
+            </div>
+        </div>
+
+</body>
+</html>
